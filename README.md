@@ -9,7 +9,7 @@ This project is an attempt to build web pages in that style, using [Bootstrap](h
 
 Getting Started
 -------------------------------------------------------------------------------
-The file *index.html* is a very simple example of what Tufte Bootstrap can do. You'll learn the most by browsing the demo as well as by reading the html markup.
+The file *index.html* is a very simple example of what Tufte Bootstrap can do. You'll learn the most if you [browse the example web page demo](https://dylan-k.github.io/tufte-bootstrap). You might also want to [read the HTML](https://github.com/dylan-k/tufte-bootstrap/blob/gh-pages/index.html) markup.
 
 
 Project Scope and Status
