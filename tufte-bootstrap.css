@@ -118,3 +118,21 @@ blockquote footer cite
   counter-increment: sidenote-counter;       /* Increment the value of sidenote counter by 1 */
   vertical-align: super;                     /* make superscript */
 }
+.newthought 
+{ 
+  font-variant: small-caps;
+  font-size: 1.2em; 
+}
+.sans { 
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  letter-spacing: .03em; 
+}
+
+code { 
+  font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  font-size: 1.0rem;
+  line-height: 1.42;
+}
+.sans > code { 
+  font-size: 1.2rem; 
+}
