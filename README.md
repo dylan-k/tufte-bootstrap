@@ -2,9 +2,9 @@
 
 Tufte Bootstrap
 ===============================================================================
-[Edward Tufte](https://en.wikipedia.org/wiki/Edward_Tufte) uses a distinctive style in his handouts: simple, with well-set typography, extensive sidenotes, and tight integration of graphics and charts. `tufte-css` brings that style to HTML documents.
+[Edward Tufte](https://en.wikipedia.org/wiki/Edward_Tufte) uses distinctive, simple, well-set typography; extensive sidenotes; and tight integration of graphics and charts. `tufte-bootstrap` brings that style to the [Bootstrap](https://getbootstrap.com) framework. 
 
-This project is an attempt to build web pages in that style, using [Bootstrap](https://getbootstrap.com). It is directly inspired [Tufte CSS](https://github.com/edwardtufte/tufte-css), which is based on [Tufte-LaTeX](https://tufte-latex.github.io/tufte-latex/) and the [R Markdown Tufte Handout](http://rmarkdown.rstudio.com/examples/tufte-handout.pdf).
+This project is directly inspired [Tufte CSS](https://github.com/edwardtufte/tufte-css), which is based on [Tufte-LaTeX](https://tufte-latex.github.io/tufte-latex/) and the [R Markdown Tufte Handout](http://rmarkdown.rstudio.com/examples/tufte-handout.pdf).
 
 
 Getting Started
@@ -35,8 +35,6 @@ If you notice something wrong or broken, let us know by opening an issue, or bet
 Please document your issues and fixes thoroughly. This means a clear description of the concern, steps on how to reproduce it, and (if possible) before and after screenshots and links to prior discussions or commits. Please keep pull requests to one change at a time.
 
 Fixes and new functionality should be tested against `index.html` on screens as small as an iPhone 4 and as big as, well, as big as you use normally. (If you don't have a mobile device handy, fake different devices with your browser's developer tools.)
-
-See the Issues page, especially Help Wanted, for opportunities to contribute. Keep our style guide in mind:
 
 
 Contributors
