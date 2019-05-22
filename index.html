@@ -20,59 +20,72 @@
 
 
 <main class="container px-5 ">
-  
   <article>
 
-    <p class="col-lg-7 offset-lg-2">Lorem ipsum dolor sit amet, usu meis justo iriure ex, quo impedit minimum dignissim in, te dicunt detracto dissentiet mea. Eum eruditi deleniti ad. Eam et consul feugiat, cu duo omnes singulis constituam. Pri saperet detraxit et, case corpora pro et. Illum signiferumque quo eu, nominavi expetenda pri ex.</p>
-    <p class="col-lg-7 offset-lg-2">Lorem ipsum dolor sit amet, usu meis justo iriure ex, quo impedit minimum dignissim in, te dicunt detracto dissentiet mea. Eum eruditi deleniti ad. Eam et consul feugiat, cu duo omnes singulis constituam. Pri saperet detraxit et, case corpora pro et. Illum signiferumque quo eu, nominavi expetenda pri ex.</p>
-    <p class="col-lg-7 offset-lg-2">Lorem ipsum dolor sit amet, usu meis justo iriure ex, quo impedit minimum dignissim in, te dicunt detracto dissentiet mea. Eum eruditi deleniti ad. Eam et consul feugiat, cu duo omnes singulis constituam. Pri saperet detraxit et, case corpora pro et. Illum signiferumque quo eu, nominavi expetenda pri ex.</p>
-    
 
-    <!-- EXAMPLE: side note -->
-    <aside class="sidenote col-lg-3 float-right">This is a <em>side</em> note. Notice that the side notes are numbered.</aside>
-
-
-
-    <p class="col-lg-7 offset-lg-2">Lorem ipsum dolor sit amet, usu meis justo iriure ex, quo impedit minimum dignissim in, te dicunt detracto dissentiet mea. Eum eruditi deleniti ad. Eam et consul feugiat, cu duo omnes singulis constituam. Pri saperet detraxit et, case corpora pro et. Illum signiferumque quo eu, nominavi expetenda pri ex.</p>
-    <p class="col-lg-7 offset-lg-2">Lorem ipsum dolor sit amet, usu meis justo iriure ex, quo impedit minimum dignissim in, te dicunt detracto dissentiet mea. Eum eruditi deleniti ad. Eam et consul feugiat, cu duo omnes singulis constituam. Pri saperet detraxit et, case corpora pro et. Illum signiferumque quo eu, nominavi expetenda pri ex.</p>
-    <p class="col-lg-7 offset-lg-2">Lorem ipsum dolor sit amet, usu meis justo iriure ex, quo impedit minimum dignissim in, te dicunt detracto dissentiet mea. Eum eruditi deleniti ad. Eam et consul feugiat, cu duo omnes singulis constituam. Pri saperet detraxit et, case corpora pro et. Illum signiferumque quo eu, nominavi expetenda pri ex.</p>
-    
-
-    <!-- EXAMPLE: side note numbering-->
-    <aside class="sidenote col-lg-3 float-right">This is a <em>side</em> note. Notice that side notes' numbers increase.</aside>
+    <!-- EXAMPLE: special classes position the paragraphs... -->
+    <section>
+      <p class="col-lg-7 offset-lg-2">Edward Tufte uses distinctive, simple, well-set typography; extensive sidenotes; and tight integration of graphics and charts. <dfn>Tufte Bootstrap</dfn> brings Tufte's style to the Bootstrap framework.</p>
+      <p class="col-lg-7 offset-lg-2">This project is directly inspired by <a href="https://github.com/edwardtufte/tufte-css">Tufte CSS</a>, which is based on Tufte-LaTeX and the R Markdown Tufte Handout.</p>
+      <p class="col-lg-7 offset-lg-2">If you see anything that Tufte Bootstrap could improve, we welcome your contribution in the form of an issue or pull request on the GitHub project: <a href="https://github.com/dylan-k/tufte-bootstrap">tufte-bootstrap</a>.
+    </section>
 
 
-    <p class="col-lg-7 offset-lg-2">Lorem ipsum dolor sit amet, usu meis justo iriure ex, quo impedit minimum dignissim in, te dicunt detracto dissentiet mea. Eum eruditi deleniti ad. Eam et consul feugiat, cu duo omnes singulis constituam. Pri saperet detraxit et, case corpora pro et. Illum signiferumque quo eu, nominavi expetenda pri ex.</p>
-    <p class="col-lg-7 offset-lg-2">Lorem ipsum dolor sit amet, usu meis justo iriure ex, quo impedit minimum dignissim in, te dicunt detracto dissentiet mea. Eum eruditi deleniti ad. Eam et consul feugiat, cu duo omnes singulis constituam. Pri saperet detraxit et, case corpora pro et. Illum signiferumque quo eu, nominavi expetenda pri ex.</p>
-    <p class="col-lg-7 offset-lg-2">Lorem ipsum dolor sit amet, usu meis justo iriure ex, quo impedit minimum dignissim in, te dicunt detracto dissentiet mea. Eum eruditi deleniti ad. Eam et consul feugiat, cu duo omnes singulis constituam. Pri saperet detraxit et, case corpora pro et. Illum signiferumque quo eu, nominavi expetenda pri ex.</p>
+    <!-- EXAMPLE: OR... you can apply them to a section -->
+    <!-- but ONLY if that section has no side/margin notes -->
+    <!-- not sure i want to keep this. could be confusing. -->
+    <section class="col-lg-7 offset-lg-2">
+      <h2 id="getting-started">Getting Started</h2>
+      <p>Since this project stands atop Bootstrap's giant shoulders, it assumes your HTML5 already employs Bootstrap, whose <a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/#starter-template">starter template</a> is a good guide to getting started.</p>
+      <p>To add Tufte Bootstrap, copy <code>tufte-bootstrap.css</code> and the <code>assets</code> directory to your project directory, then add the following to your HTML document’s <code>head</code> block:</p>
+      <pre class="code">&lt;link rel="stylesheet" href="tufte-bootstrap.css"/&gt;</pre>
+      <p>Now you just have to use the markup conventions described in this document. For best results, View Source and Inspect Element frequently.</p>
+    </section>
 
 
-    <!-- EXAMPLE: margin note -->
-    <aside class="marginnote col-lg-3 float-right">This is a margin note. Notice there isn’t a number preceding the note.</aside>
-    
+    <section>
+      <h2 class="col-lg-7 offset-lg-2" id="fundamentals">Fundamentals</h2>
+      <h3 class="col-lg-7 offset-lg-2" id="fundamentals--sections-and-headers">Sections and Headings</h3>
+      <p class="col-lg-7 offset-lg-2">Organize your document with an <code>article</code> element inside your <code>body</code> tag. Inside that, use <code>section</code> tags around each logical grouping of text and headings.</p>
+      <p class="col-lg-7 offset-lg-2">Tufte CSS uses <code>h1</code> for the document title, <code>p</code> with class <code>lead</code> for the document subtitle, <code>h2</code> for section headings, and <code>h3</code> for low-level headings. More specific headings are not supported. If you feel the urge to reach for a heading of level 4 or greater, consider redesigning your document:</p>
 
-    <!-- EXAMPLE: headings. they fill the whole width of container, to make sure they clear -->
-    <h2 class="col-lg-10 offset-lg-2" id="h1">Heading Level the Second</h2>
-    <h3 class="col-lg-10 offset-lg-2" id="h2">Heading 3: Blockquotes and Epigraphs</h3>
+      <!-- EXAMPLE: quotes -->
+      <blockquote class="epigraph col-lg-6 offset-lg-3" cite="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000hB">
+        <p>The English language . . . becomes ugly and inaccurate because our thoughts are foolish, but the slovenliness of our language makes it easier for us to have foolish thoughts.</p>
+        <footer>&mdash; George Orwell, “Politics and the English Language”</footer>
+      </blockquote>
 
+      <aside class="marginnote col-lg-3 float-right">Epigraphs are like blockquotes but <em>Epigraphs are italicized</em>.</aside>
 
-    <p class="col-lg-7 offset-lg-2">In the two examples below, the <code>blockquote</code> tag is used first to render a quotation, and then an epigraph. In literature, an epigraph is a phrase, quotation, or poem that is set at the beginning of a document or component. The epigraph may serve as a preface, as a summary, as a counter-example, or to link the work to a wider literary canon, either to invite comparison or to enlist a conventional context. In a book, it is part of the front matter. A block quotation (also known as a long quotation or extract) is a quotation in a written document that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size font. This is in contrast to setting it off with quotation marks in a run-in quote. Block quotations are used for long quotations. The Chicago Manual of Style recommends using a block quotation when extracted text is 100 words or more, or approximately six to eight lines in a typical manuscript.</p>
-
-
-    <!-- EXAMPLE: quotes -->
-    <blockquote class="epigraph col-lg-6 offset-lg-3" cite="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000hB">
-      <p>The English language . . . becomes ugly and inaccurate because our thoughts are foolish, but the slovenliness of our language makes it easier for us to have foolish thoughts.</p>
-      <footer>&mdash; George Orwell, “Politics and the English Language”</footer>
-    </blockquote>
-
-    <aside class="marginnote col-lg-3 float-right">Epigraphs are like blockquotes but <em>Epigraphs are italicized</em>.</aside>
-
-    <blockquote class="col-lg-6 offset-lg-3" cite="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000hB">
-      <p>[It is] notable that the Feynman lectures (3 volumes) write about all of physics in 1800 pages, using only 2 levels of hierarchical headings: chapters and A-level heads in the text. It also uses the methodology of <em>sentences</em> which then cumulate sequentially into <em>paragraphs</em>, rather than the grunts of bullet points. Undergraduate Caltech physics is very complicated material, but it didn’t require an elaborate hierarchy to organize.</p>
-      <footer>&mdash; <a href="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000hB">Edward Tufte, forum post, <cite>Book design: advice and examples</cite> thread</a></footer>
-    </blockquote>
+      <blockquote class="col-lg-6 offset-lg-3" cite="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000hB">
+        <p>[It is] notable that the Feynman lectures (3 volumes) write about all of physics in 1800 pages, using only 2 levels of hierarchical headings: chapters and A-level heads in the text. It also uses the methodology of <em>sentences</em> which then cumulate sequentially into <em>paragraphs</em>, rather than the grunts of bullet points. Undergraduate Caltech physics is very complicated material, but it didn’t require an elaborate hierarchy to organize.</p>
+        <footer>&mdash; <a href="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000hB">Edward Tufte, forum post, <cite>Book design: advice and examples</cite> thread</a></footer>
+      </blockquote>
 
 
+      <p class="col-lg-7 offset-lg-2">As a bonus, this excerpt regarding the use of headings provides an example of block quotes. In Tufte CSS they are just lightly styled, semantically correct HTML using <code>blockquote</code> and <code>footer</code> elements. See page 20 of <a href="https://www.edwardtufte.com/tufte/books_vdqi">The Visual Display of Quantitative Information</a> for an example in print.</p>
+
+
+      <!-- EXAMPLE: side note -->
+      <!-- currently required to be a block-level element -->
+      <!-- should be able to add the <span> option back in -->
+      <aside class="sidenote col-lg-3 float-right">This is a <em>side</em> note. Notice that the side notes are numbered.</aside>
+
+
+      <p class="col-lg-7 offset-lg-2"><span class="newthought">In his later books</span><!-- <label for="sn-in-his-later-books" class="margin-toggle sidenote-number"></label> <input type="checkbox" id="sn-in-his-later-books" class="margin-toggle">-->, Tufte starts each section with a bit of vertical space, a non-indented paragraph, and the first few words of the sentence set in small caps. For this we use a span with the class <code>newthought</code>, as demonstrated at the beginning of this paragraph. Vertical spacing is accomplished separately through <code>&lt;section&gt;</code> tags. Be consistent: though we do so in this paragraph for the purpose of demonstration, do not alternate use of header elements and the <code>newthought</code> technique. Pick one approach and stick to it.</p>
+
+      <h3 class="col-lg-7 offset-lg-2" id="fundamentals--type">Type</h3>
+      <p class="col-lg-7 offset-lg-2">In print, <a href="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000Vt">Tufte has used the proprietary Monotype Bembo font</a>. A similar effect is achieved in digital formats with the now open-source <a href="https://github.com/edwardtufte/et-book">ETBook</a>, which Tufte CSS supplies with a <code>@font-face</code> reference to a .ttf file. In case ETBook somehow doesn’t work, the CSS shifts gracefully to other serif fonts like Palatino and Georgia.</p>
+
+      <!-- EXAMPLE: side note numbering-->
+      <aside class="sidenote col-lg-3 float-right">Here's another <em>side</em> note. Notice that side notes' numbers increase automatically.</aside>
+
+      <p class="col-lg-7 offset-lg-2">Also included are separate font files for bold (strong) and italic (emphasis, cite), instead of relying on the browser to mechanically transform the text. This is typographic best practice.</p>
+      <p class="sans col-lg-7 offset-lg-2">If you prefer sans-serifs, use the <code>sans</code> class. It relies on Bootstrap's default font stack for sans-serifs.</p>
+      <p class="col-lg-7 offset-lg-2">As always, these design choices are merely one approach that Tufte Bootstrap provides by default.</p>
+    </section>
+
+    <section>
     <h2 class="col-lg-7 offset-lg-2" id="figures">Figures</h2>
     <p class="col-lg-7 offset-lg-2">Tufte emphasizes tight integration of graphics with text. Data, graphs, and figures are kept with the text that discusses them. In print, this means they are not relegated to a separate page. On the web, that means readability of graphics and their accompanying text without extra clicks, tab-switching, or scrolling.</p>
     <p class="col-lg-7 offset-lg-2">Figures should try to use the <code>figure</code> element, which by default are constrained to the main column. Don’t wrap figures in a paragraph tag. Any label or margin note goes in a regular margin note inside the figure. For example, most of the time one should introduce a figure directly into the main flow of discussion, like so:</p>
@@ -111,7 +124,7 @@
 
     <p class="col-lg-7 offset-lg-2">usu meis justo iriure ex, quo impedit minimum dignissim in, te dicunt detracto dissentiet mea. Eum eruditi deleniti ad. Eam et consul feugiat, cu duo omnes singulis constituam. Pri saperet detraxit et, case corpora pro et. Illum signiferumque quo eu, nominavi expetenda pri ex.</p>
     <p class="col-lg-7 offset-lg-2">Lorem ipsum dolor sit amet, usu meis justo iriure ex, quo impedit minimum dignissim in, te dicunt detracto dissentiet mea. Eum eruditi deleniti ad. Eam et consul feugiat, cu duo omnes singulis constituam. Pri saperet detraxit et, case corpora pro et. Illum signiferumque quo eu, nominavi expetenda pri ex.</p>
-
+    <section>
 
   </article> <!-- end article.row -->
   </main> <!-- end main.container -->
