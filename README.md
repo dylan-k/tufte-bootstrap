@@ -6,6 +6,8 @@ Tufte Bootstrap
 
 This project is directly inspired [Tufte CSS](https://github.com/edwardtufte/tufte-css), which is based on [Tufte-LaTeX](https://tufte-latex.github.io/tufte-latex/) and the [R Markdown Tufte Handout](http://rmarkdown.rstudio.com/examples/tufte-handout.pdf).
 
+![screenshot](https://raw.githubusercontent.com/dylan-k/tufte-bootstrap/gh-pages/assets/img/screenshot.png)
+
 
 Getting Started
 -------------------------------------------------------------------------------
