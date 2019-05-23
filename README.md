@@ -16,18 +16,7 @@ The file *index.html* is a very simple example of what Tufte Bootstrap can do. Y
 
 Project Scope and Status
 -------------------------------------------------------------------------------
-Tufte Bootstrap is a intended to become a Bootstrap theme. It is currently in a very early stage, as a simple css overwrite with bootstrap classes added directly into the html.
-
-TO DO:
-
-- [ ] Use mixins instead of html classes
-- [ ] make provision for bootstrap's medium screensize and smaller
-- [ ] apply link styles from Tufte CSS
-- [ ] use boostrap's "collapse" component to make stretchtext
-- [ ] add ability hide/show the marginnotes and sidebotes
-- [ ] add a [sidebar](https://www.codeply.com/go/3e0RAjccRO/bootstrap-4-collapsing-sidebar-menu)?
-- [ ] "night mode" inverted colors
-- [ ] oldstyle figures where appropriate
+Tufte Bootstrap is a intended to become a Bootstrap theme. It is currently in a very early stage, as a simple css overwrite with bootstrap classes added in. Planned enhancements are listed among the issues and suggestions are welcome.
 
 
 Contributing
